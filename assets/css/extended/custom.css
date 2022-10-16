@@ -1,0 +1,189 @@
+/* Import JetBrains Mono */
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold-Italic.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold-Italic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-ExtraBold-Italic.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-ExtraBold-Italic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-ExtraBold.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Italic.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Medium-Italic.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium-Italic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Medium.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+/* Customize Link Hover Color */
+:root {
+    --link-background-color: #007bff2c;
+    --link-color: var(--primary);
+    --link-hover-color: #007AFF;
+    --link-underline-shadow: 0 1px 0 var(--link-color);
+    --link-hover-underline-color: var(--link-hover-color);
+    --link-hover-underline-shadow: 0 2px 0 var(--link-hover-underline-color);
+  }
+
+.dark {
+    --link-background-color: #007bff2c;
+    --link-color: var(--primary);
+    --link-hover-color: #0A84FF;
+    --link-underline-shadow: 0 1px 0 var(--link-color);
+    --link-hover-underline-color: var(--link-hover-color);
+    --link-hover-underline-shadow: 0 2px 0 var(--link-hover-underline-color);
+}
+
+
+/* Disable Link Hover Color for blog titles*/
+.entry-header{
+    --link-color: var(--primary);
+    --link-hover-color: #var(--primary);
+    --link-underline-shadow: 0 1px 0 var(--link-color);
+    --link-hover-underline-color: var(--link-hover-color);
+    --link-hover-underline-shadow: 0 2px 0 var(--link-hover-underline-color);
+}
+
+/* Code Blocks */
+.post-content code {
+    font-size: 13px;
+    line-height: 20px;
+    font-family: "Jetbrains Mono", "Monospace";
+}
+
+/* JetBrains Mono in Navbar */
+.nav {
+    font-family: "Jetbrains Mono";
+}
+
+/* top left logo normal  */
+/* .logo {
+    font-family: apple-system,BlinkMacSystemFont,Helvetica,helvetica neue,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,sans-serif;;
+} */
+
+/* JetBrains Mono on metadata */
+.entry-footer, .post-meta , .archive-meta, .terms-tags {
+    font-family: "Jetbrains Mono";
+}
+
+/* Jetbrains Mono on captions */
+.post-content figure figcaption p, .post-content figure figcaption p a, .entry-cover p {
+    font-family: "Jetbrains Mono";
+    font-size: 10px;
+    text-align: left;
+}
+
+/* Remove left right margin from images */
+.post-content img {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.profile img {
+    border-radius: 5%;
+}
+
+.footer  {
+  text-align: end;
+}
+
+/* Markdown tables */
+
+tr {
+  font-family: "Jetbrains Mono";
+  font-size: 14px;
+}
+
+.post-content table:not(.highlighttable,.highlight table,.gist .highlight) td {
+  /* line-height: 20px; */
+  padding: 6px 15px;
+}
+
+.post-content table th{
+  font-size: 15px;
+  font-weight: 700;
+  padding: 6px 15px;
+  border-bottom: 2px solid var(--border);
+
+}
+
+/* Center tables */
+.post-content table {
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  width: fit-content;
+}
+
+
+/* Figure Titles */
+.post-content figure figcaption {
+  font-size: 15px;
+  font-family: "Jetbrains Mono";
+  font-weight: 400;
+  text-align: center;
+  margin: 4px 0 32px;
+  color: var(--secondary);
+}
+
+/* Bigger Katex Margin */
+
+.katex-display>.katex>.katex-html {
+  margin: 32px 0;
+}
